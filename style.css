@@ -1,46 +1,45 @@
 /* about.page */
 
-.body{
-    margin: 0;
-    background-color: #178dff;
-    display: flex;
+.body {
+  margin: 0;
+  background-color: #178dff;
+  display: flex;
 }
 
-.nav{
-    background-color:#178dff;
-    max-width: 250px;
-    min-width: 250px;
+.nav {
+  background-color: #178dff;
+  max-width: 250px;
+  min-width: 250px;
 }
 
-.menu{
-    display: flex;
-    position: relative;
-    top: 4%;
-    flex-direction: column;
-    align-items: center;
+.menu {
+  display: flex;
+  position: relative;
+  top: 4%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .side-bar-label {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-style: italic;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-family: sans-serif;
 }
 
-.active{
-    color:white;
- }
- 
- .side-bar-label:hover {
-     color: white;
- }
+.active {
+  color: white;
+}
 
-.pad-decoration{
+.side-bar-label:hover {
+  color: white;
+}
+
+.pad-decoration {
   font-size: 28px;
   padding-bottom: 18px;
 }
-
 
 /* h1{
   margin-top: 1px;
@@ -57,9 +56,9 @@
   box-shadow: 5px 5px 8px 2px #000000bf;
   height: 100%;
   width: 100%;
-} 
+}
 
-.avatar-border{
+.avatar-border {
   background-color: rgb(245, 251, 255);
   border-radius: 50%;
   /* height: 26%;
@@ -68,251 +67,246 @@
   margin-top: 48px; */
 }
 
-
-.data{
-    width: calc(100vw - 250px);
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    overflow: auto;
+.data {
+  width: calc(100vw - 250px);
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  overflow: auto;
 }
 
-.text{
-    position: relative;
-    left: 8%;
-    font-size: 24px;
+.text {
+  position: relative;
+  left: 8%;
+  font-size: 24px;
 }
-
-
-
 
 /* bitmoji adjustment */
 
-.bitmoji{
-    position: absolute;
-    bottom: 0px;
-    right: 40px;
-    width: 90px;
+.bitmoji {
+  position: absolute;
+  bottom: 0px;
+  right: 40px;
+  width: 90px;
 }
 
 /* SIMPLE BOUNCE */
-@keyframes bounce { 
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-16px); }
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-16px);
+  }
 }
- 
+
 .bounce {
   animation: bounce 0.8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
 
-
-.bitmoji-exp{
-position: absolute;
-bottom: 0px;
-right: 5px;
-width: 206px;
+.bitmoji-exp {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  width: 206px;
 }
 
-.bitmoji-edu{
-    position: absolute;
-    bottom: 0px;
-    right: 5px;
-    width: 163px;
+.bitmoji-edu {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  width: 163px;
 }
 
-.bitmoji-connect{
-    position: absolute;
-    bottom: 0px;
-    right: 20px;
-    width: 260px;
+.bitmoji-connect {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  width: 260px;
 }
-
 
 /* Timeline */
 
-  
-  /* Set a background color */
-  body {
-    background-color: #718cc7;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #000000d6;
-    top: -129px;
-    bottom: -129px;
-    left: 14%;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #f81e2a;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-    
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0px;
-    width: 59%;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 16%;
-    width: 84%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid rgb(94, 211, 90);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgb(184 220 255);;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid rgb(170, 64, 240);
-    border-width: 10px 10px 10px 0;
-    border-color: transparent rgb(184 220 255);
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -5%;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: rgb(184 220 255);
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+/* Set a background color */
+body {
+  background-color: #718cc7;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #000000d6;
+  top: -129px;
+  bottom: -129px;
+  left: 14%;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #f81e2a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0px;
+  width: 59%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 16%;
+  width: 84%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(94, 211, 90);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(184 220 255);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(170, 64, 240);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(184 220 255);
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -5%;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(184 220 255);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
   /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid rgb(58, 243, 12);
-      border-width: 10px 10px 10px 0;
-      border-color: transparent rgb(250, 22, 22) transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
+  .timeline::after {
+    left: 31px;
   }
 
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid rgb(58, 243, 12);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(250, 22, 22) transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
 
 /* Connect Me Form */
 
-
-
 /* Style input type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 25px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
 
 /* Style input type="email", select elements and textareas */
 
-input[type=email], select, textarea {
+input[type="email"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 25px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: black;
 }
 
 /* Add a background color and some padding around the form */
- .form-container {
-    /* border-radius: 20px; */
-    /* background-color: #f2f2f2; */
-    /* padding: 26px; */
-    /* background-color: #89ffaa; */
-    margin-left: 12%;
-    /* margin-bottom: 12px; */
-    width: 50%;
-} 
+.form-container {
+  /* border-radius: 20px; */
+  /* background-color: #f2f2f2; */
+  /* padding: 26px; */
+  /* background-color: #89ffaa; */
+  margin-left: 12%;
+  /* margin-bottom: 12px; */
+  width: 50%;
+}
 
 .form-field {
   padding: 0px;
@@ -334,30 +328,28 @@ input[type=submit]:hover {
   background-color: darkred;
 }
 
-
 .submit-btn {
   background-color: #255656;
 }
 
-.logos{
+.logos {
   display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 175px;
-    margin-bottom: 258px;
+  flex-direction: column;
+  position: relative;
+  left: 175px;
+  margin-bottom: 258px;
 }
 
-
-.git{
+.git {
   height: 91px;
 }
 
-.ig{
+.ig {
   height: 85px;
   margin-top: 18px;
 }
 
-.ld{
+.ld {
   margin-bottom: 11px;
   height: 90px;
 }
@@ -396,7 +388,7 @@ input[type=submit]:hover {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  
+  align-items: flex-start;
   overflow: auto;
 }
 
@@ -451,7 +443,6 @@ input[type=submit]:hover {
 
 /* Creator Page */
 
-
 .creator-wrapper {
   height: 100%;
   width: 100%;
@@ -460,25 +451,24 @@ input[type=submit]:hover {
   align-items: center;
 }
 
-.creator-header{
-width: 100%;
+.creator-header {
+  width: 100%;
 }
 
-
-.div1{
+.div1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10%;
 }
 
-.div2{
+.div2 {
   display: flex;
   justify-content: center;
   height: 62%;
 }
 
-.div3{
+.div3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,30 +477,41 @@ width: 100%;
   width: 100%;
 }
 
-
-
 .title {
   height: 100%;
   width: 100%;
 }
 
-.bluebackgrond{
-  background-color:rgb(224 240 255);
+.bluebackgrond {
+  background-color: rgb(224 240 255);
 }
-
 
 .centre {
   margin-left: 40%;
   margin-top: 2%;
 }
 
-.para{
+.para {
   text-align: center;
   font-weight: lighter;
 }
 
-.yt-box{
-  background-image: linear-gradient(to top, #091115, #1f2c32, #334952, #486874, #5e8997, #4f94ac, #399fc3, #00a9dc, #009aef, #0088ff, #0070ff, #394dff);
+.yt-box {
+  background-image: linear-gradient(
+    to top,
+    #091115,
+    #1f2c32,
+    #334952,
+    #486874,
+    #5e8997,
+    #4f94ac,
+    #399fc3,
+    #00a9dc,
+    #009aef,
+    #0088ff,
+    #0070ff,
+    #394dff
+  );
   height: 74%;
   width: 90%;
 }
@@ -523,24 +524,22 @@ width: 100%;
   padding-top: 16px;
 }
 
-
 .parentpage {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
-.page{
+.page {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 80%;
 }
 
-.videostyle{
+.videostyle {
   padding: 24px 16px;
   width: 100%;
   height: 75%;
 }
-
 
 .name {
   color: white;
@@ -565,4 +564,107 @@ a.btn.project {
 a.btn.project:hover {
   background-color: #fff;
   color: #ff3628;
+}
+
+@media (max-width: 480px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    min-width: 100%;
+    height: 100vh;
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .photo {
+    width: 50%;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .data-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    padding: 8px;
+    left: 0;
+  }
+
+  .timeline-wrapper {
+    /* height: 100%; */
+  }
+
+  .timeline::after {
+    top: -55px;
+    bottom: 0px;
+    left: 8%;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  .content {
+    padding: 10px 16px;
+  }
+
+  .skills-wrapper {
+    position: relative;
+    right: 0%;
+    top: 4%;
+    height: 300px;
+  }
+
+  .skill-img {
+    padding: 8px 27px;
+    font-size: 52px;
+  }
+
+  .certificate-wrapper {
+    position: relative;
+    right: 0%;
+    top: 2%;
+    margin: 8px;
+    width: 90%;
+    overflow: unset;
+    margin-bottom: 32px;
+  }
+
+  .bitmoji {
+    width: 75px;
+  }
+
+  .bitmoji-exp {
+    width: 180px;
+  }
+
+  .bitmoji-edu {
+    width: 140px;
+  }
+
+  .bitmoji-connect {
+    width: 180px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  form {
+    width: 80%;
+  }
 }
