@@ -54,7 +54,6 @@
 .photo {
   border-radius: 50%;
   box-shadow: 5px 5px 8px 2px #000000bf;
-  height: 100%;
   width: 100%;
 }
 
@@ -483,12 +482,13 @@ input[type="submit"]:hover {
 }
 
 .bluebackgrond {
-  background-color: rgb(224 240 255);
+  background-image: radial-gradient(circle, #ff4141, #ff4a49, #ff5251, #ff5a59, #ff6161);
 }
 
 .centre {
   margin-left: 40%;
   margin-top: 2%;
+  color: white;
 }
 
 .para {
@@ -538,7 +538,7 @@ input[type="submit"]:hover {
 .videostyle {
   padding: 24px 16px;
   width: 100%;
-  height: 75%;
+  height: 86%;
 }
 
 .name {
@@ -598,10 +598,10 @@ a.btn.project:hover {
     padding: 8px;
     left: 0;
   }
-
+/* 
   .timeline-wrapper {
-    /* height: 100%; */
-  }
+     height: 100%;
+    } */
 
   .timeline::after {
     top: -55px;
@@ -667,4 +667,36 @@ a.btn.project:hover {
   form {
     width: 80%;
   }
+
+ 
+  .yt-box {
+   height: 99%;
+  }
+ 
+  .centre {
+    margin-left: 28%;
+  }
+
+  .div1 {
+    height: 10%;
+}
+
+  .div2 {
+    display: flex;
+    height: 69%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div3 {
+  height: 16%;
+}
+
+
+.videostyle {
+    padding: 7px 4px;
+    width: 71%;
+    height: 62%;
+}
+
 }
