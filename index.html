@@ -42,7 +42,7 @@
         <div class="text">
             <h1>Hi,</h1>
             <h1>I am <span style="color:red">Rohan</span>,</h1>
-            <p>A 24 year old <mark> Coder </mark>, YouTuber, and Traveller from India.</p>
+            <p>A 24 year old <span class="auto-input style-input"></span></p>
             <p>I am highly self-motivated enthusiastic and always willing to learn more. </p>
             <p>A Computer Science graduate who likes to play around with frontends.</p>
             <!-- <marquee>HTML, CSS, JavaScript, MySQL, GIT, React Js</marquee>
@@ -53,6 +53,18 @@
       
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Coder", "YouTuber", "Traveller from India."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+
+    </script>
 
 </body>
 
