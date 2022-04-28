@@ -502,7 +502,7 @@ input[type="reset"]:hover {
   width: 100%;
 }
 
-.bluebackgrond {
+.red-bg {
   background-image: radial-gradient(circle, #ff4141, #ff4a49, #ff5251, #ff5a59, #ff6161);
 }
 
@@ -619,7 +619,7 @@ a.btn.project:hover {
   }
 
   .photo {
-    width: 70%;
+    width: 68%;
   }
 
   .data {
@@ -845,7 +845,7 @@ a.btn.project:hover {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 30px;
   display: block;
   transition: 0.3s;
 }
