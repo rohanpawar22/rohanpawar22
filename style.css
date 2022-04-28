@@ -715,8 +715,8 @@ a.btn.project:hover {
   }
 
   .bitmoji-connect {
-    width: 166px;
-    right: 25%;
+    width: 164px;
+    left: 3%;
   }
 
   .logo {
@@ -829,15 +829,15 @@ a.btn.project:hover {
 
 /* The side navigation menu */
 .sidenav {
-  height: 93%; /* 100% Full-height */
+  height: 96%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #0475e3; /* Black*/
+  background-color: #1c7cda; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 39px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
