@@ -715,7 +715,7 @@ a.btn.project:hover {
   }
 
   .bitmoji-connect {
-    width: 180px;
+    width: 166px;
     right: 25%;
   }
 
@@ -829,7 +829,7 @@ a.btn.project:hover {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 93%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -857,6 +857,7 @@ a.btn.project:hover {
   right: 36px;
   font-size: 38px;
   margin-left: 50px;
+  color: white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
