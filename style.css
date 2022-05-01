@@ -743,7 +743,7 @@ a.btn.project:hover {
   }
  
   .centre {
-    margin-left: 32%;
+    margin-left: 34%;
   }
 
   .div1 {
@@ -837,7 +837,7 @@ a.btn.project:hover {
   left: 0;
   background-color: #1c7cda; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 39px; /* Place content 60px from the top */
+  padding-top: 33px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
