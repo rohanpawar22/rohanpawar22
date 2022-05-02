@@ -407,7 +407,8 @@ input[type="reset"]:hover {
   top: 5%;
   height: 400px;
   width: 430px;
-  background: #ff4a49;
+  background: #ff000085;
+  border: 3px solid #ff1212;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -747,7 +748,10 @@ a.btn.project:hover {
   }
 
   .bitmoji-edu {
-    width: 140px;
+    width: 100px;
+    position: relative;
+    left: 35%;
+    bottom: 48%;
   }
 
   .bitmoji-connect {
