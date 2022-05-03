@@ -90,13 +90,20 @@
             <p>I enjoy coding&#128187;, riding my bike&#128757; and travelling to new places.&#x1F30D;</p>
         </div>
 
-        <img src="./photo/Ro.png" class="bitmoji bounce" alt="Image">
+        <img src="./photo/arrow.png" class="arrow" alt="arrow">
+        <h2 class="clickonme">Click on Me!</h2>
+        <h3 class="for-mobile-click" onclick="openPDF()" >Know More</h3>
+        <img src="./photo/Ro.png" class="bitmoji bounce" alt="Image" onclick="openPDF()">
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
+
+        function openPDF(){
+            window.open("./resources/RohanPawar.pdf", '_blank');
+        }
 
         var typed = new Typed(".auto-input", {
             strings: ["Coder", "YouTuber", "MotoVlogger", "Traveller from India."],

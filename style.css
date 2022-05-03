@@ -100,6 +100,25 @@
 
 /* bitmoji adjustment */
 
+
+.arrow{
+  height: 32%;
+  position: relative;
+  left: 8%;
+  bottom: 8%;
+}
+
+.clickonme{
+  z-index: 1;
+  position: relative;
+  right: 6.4%;
+  bottom: 11.5%;
+}
+
+/* .for-mobile-click{
+display: none;
+} */
+
 .bitmoji {
   position: absolute;
   bottom: 0px;
@@ -511,7 +530,7 @@ input[type="reset"]:hover {
 }
 
 .centre {
-  margin-left: 40%;
+  margin-left: 42%;
   margin-top: 2%;
   color: white;
 }
@@ -736,6 +755,23 @@ a.btn.project:hover {
     overflow: hidden;
     height: 38%;
   }
+
+
+  .arrow {
+    display: none;
+  }
+  .clickonme{
+    display: none;
+  }
+
+  .for-mobile-click{
+    height: 16px;
+    background-color: #ff1313;
+    position: relative;
+    bottom: 6%;
+    padding: 14px 12px;
+    color: white;
+}
 
   .bitmoji {
     width: 75px;
