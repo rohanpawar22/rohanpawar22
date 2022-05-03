@@ -730,10 +730,11 @@ a.btn.project:hover {
   .certificate-wrapper {
     position: relative;
     right: 0%;
-    top: 24%;
-    margin: 8px;
+    top: 22%;
+    /* margin: 8px; */
     width: 90%;
-    overflow: unset;
+    overflow: hidden;
+    height: 38%;
   }
 
   .bitmoji {
@@ -755,8 +756,9 @@ a.btn.project:hover {
   }
 
   .bitmoji-connect {
-    width: 164px;
-    left: 3%;
+    position: relative;
+    width: 162px;
+    right: 26%;
   }
 
   .logo {
