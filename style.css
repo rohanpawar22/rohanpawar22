@@ -102,17 +102,23 @@
 
 
 .arrow{
-  height: 32%;
+  height: 28%;
   position: relative;
-  left: 8%;
-  bottom: 8%;
+  left: 10%;
+  bottom: 6%;
 }
 
 .clickonme{
   z-index: 1;
   position: relative;
-  right: 6.4%;
-  bottom: 11.5%;
+  right: 2.1%;
+  bottom: 8.5%;
+  font-size: 20px;
+  color: red;
+}
+
+.for-mobile-click{
+  display: none;
 }
 
 /* .for-mobile-click{
@@ -765,10 +771,11 @@ a.btn.project:hover {
   }
 
   .for-mobile-click{
+    display: block;
     height: 16px;
-    background-color: #ff1313;
+    background-color: #ff4141;
     position: relative;
-    bottom: 6%;
+    bottom: 5%;
     padding: 14px 12px;
     color: white;
 }
