@@ -45,7 +45,9 @@
   padding-bottom: 18px;
 }
 
-
+.font-white{
+  color: white;
+}
 
 /* h1{
   margin-top: 1px;
@@ -224,8 +226,8 @@ body {
   position: absolute;
   width: 6px;
   background-color: #000000d6;
-  top: -129px;
-  bottom: -129px;
+  top: -15px;
+  bottom: -15px;
   left: 14%;
 }
 
@@ -288,7 +290,7 @@ body {
   left: 30px;
   border: medium solid rgb(170, 64, 240);
   border-width: 10px 10px 10px 0;
-  border-color: transparent #49abffb8;
+  border-color: transparent #00335e;
 }
 
 /* Fix the circle for containers on the right side */
@@ -298,11 +300,13 @@ body {
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: #49abffb8;
+  padding: 14px 16px;
+  background-color: #00335e;
   position: relative;
-  border-radius: 6px;
+  border-radius: 8px;
 }
+
+
 
 
 /* Connect Me Form */
@@ -432,8 +436,8 @@ input[type="reset"]:hover {
   top: 5%;
   height: 400px;
   width: 430px;
-  background: #ff000085;
-  border: 3px solid #ff1212;
+  background: #7bb6ff85;
+  border: 3px solid #0076ad;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -473,7 +477,8 @@ input[type="reset"]:hover {
   top: 5%;
   height: 400px;
   width: 300px;
-  background: #d6e8ff;
+  background: linear-gradient(1deg, #77d6eb, rgb(0 16 30));
+    border: 1px solid black;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -649,9 +654,9 @@ a.btn.project:hover {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid #49abffb8;
+    border: medium solid;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #49abffb8 transparent transparent;
+    border-color: transparent #00335e transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
