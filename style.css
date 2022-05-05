@@ -12,9 +12,13 @@
   min-width: 250px;
 }
 
-.header-aboutme{
+.header-aboutme {
   display: none;
-  }
+}
+
+.sidebar {
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -45,13 +49,9 @@
   padding-bottom: 18px;
 }
 
-.font-white{
+.font-white {
   color: white;
 }
-
-/* h1{
-  margin-top: 1px;
-} */
 
 .avatar {
   border-radius: 50%;
@@ -68,10 +68,6 @@
 .avatar-border {
   background-color: rgb(245, 251, 255);
   border-radius: 50%;
-  /* height: 26%;
-  width: 64%; */
-  /* margin-left: 34px;
-  margin-top: 48px; */
 }
 
 .data {
@@ -89,43 +85,37 @@
   font-size: 24px;
 }
 
-.iam{
+.iam {
   font-weight: 600;
 }
 
-.style-input{
-  color:#0070ff;
+.style-input {
+  color: #0070ff;
   font-size: 34px;
   font-weight: bold;
 }
 
-
 /* bitmoji adjustment */
 
-
-.arrow{
+.cloud {
   height: 28%;
   position: relative;
-  left: 10%;
-  bottom: 6%;
+  left: 9%;
+  bottom: 4%;
 }
 
-.clickonme{
+.clickonme {
   z-index: 1;
   position: relative;
-  right: 2.1%;
-  bottom: 8.5%;
+  right: 3.1%;
+  bottom: 6.8%;
   font-size: 20px;
   color: red;
 }
 
-.for-mobile-click{
+.for-mobile-click {
   display: none;
 }
-
-/* .for-mobile-click{
-display: none;
-} */
 
 .bitmoji {
   position: absolute;
@@ -171,20 +161,18 @@ display: none;
   width: 260px;
 }
 
-
-
 /* The side navigation menu */
 .sidenav {
-  height: 96%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 97%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #1c7cda; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 33px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #1c7cda;
+  overflow-x: hidden;
+  padding-top: 33px;
+  transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -205,7 +193,6 @@ display: none;
   margin-left: 50px;
   color: white;
 }
-
 
 /* Timeline */
 
@@ -301,13 +288,10 @@ body {
 /* The actual content */
 .content {
   padding: 14px 16px;
-  background-color: #00335e;
+  background-color: #054b8f;
   position: relative;
   border-radius: 8px;
 }
-
-
-
 
 /* Connect Me Form */
 
@@ -315,14 +299,14 @@ body {
 input[type="text"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 25px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /* Style input type="email", select elements and textareas */
@@ -330,14 +314,14 @@ textarea {
 input[type="email"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 25px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -351,12 +335,7 @@ input[type="reset"]:hover {
 
 /* Add a background color and some padding around the form */
 .form-container {
-  /* border-radius: 20px; */
-  /* background-color: #f2f2f2; */
-  /* padding: 26px; */
-  /* background-color: #89ffaa; */
   margin-left: 12%;
-  /* margin-bottom: 12px; */
   width: 50%;
 }
 
@@ -471,14 +450,17 @@ input[type="reset"]:hover {
   padding: 0px 12px;
 }
 
+.year-mob {
+  display: none;
+}
+
 .skills-wrapper {
   position: absolute;
   right: 6%;
   top: 5%;
   height: 400px;
   width: 300px;
-  background: linear-gradient(1deg, #77d6eb, rgb(0 16 30));
-    border: 1px solid black;
+  background: linear-gradient(1deg, #0985ff, rgb(0 16 30));
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -537,7 +519,14 @@ input[type="reset"]:hover {
 }
 
 .red-bg {
-  background-image: radial-gradient(circle, #ff4141, #ff4a49, #ff5251, #ff5a59, #ff6161);
+  background-image: radial-gradient(
+    circle,
+    #ff4141,
+    #ff4a49,
+    #ff5251,
+    #ff5a59,
+    #ff6161
+  );
 }
 
 .centre {
@@ -551,20 +540,19 @@ input[type="reset"]:hover {
   font-weight: lighter;
 }
 
-.intro-line{
+.intro-line {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.RR{
+.RR {
   padding-left: 6px;
   padding-left: 6px;
   text-decoration: underline;
   color: #0016ff;
   text-decoration-color: black;
 }
-
 
 .yt-box {
   background-image: linear-gradient(
@@ -639,7 +627,6 @@ a.btn.project:hover {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
@@ -670,6 +657,8 @@ a.btn.project:hover {
     left: 0%;
   }
 }
+
+/* FOR MOBILE */
 
 @media (max-width: 480px) {
   .body {
@@ -706,7 +695,7 @@ a.btn.project:hover {
     padding-left: 10px;
   }
 
-  .experience2{
+  .experience2 {
     height: 92%;
     display: flex;
     flex-direction: column;
@@ -714,26 +703,294 @@ a.btn.project:hover {
     align-items: center;
   }
 
-  .education2{
+  .education2 {
     height: 92%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-    .style-input {
-      font-size: 32px;
-    }
-
+  .style-input {
+    font-size: 32px;
+  }
 
   .timeline::after {
     top: 0px;
     bottom: 0px;
-    left: 7.5%;
+    left: 9%;
   }
 
-  .timeline-wrapper{
-    height: 54%;
+  .container {
+    width: 75%;
+    top: 4px;
+  }
+
+  .content {
+    padding: 10px 16px;
+  }
+
+  .font-white {
+    font-size: 14px;
+  }
+
+  .skills-wrapper {
+    position: relative;
+    right: 0%;
+    top: 2%;
+    height: 38%;
+    margin-top: 48px;
+  }
+
+  .skill-img {
+    padding: 8px 27px;
+    font-size: 52px;
+  }
+
+  .certificate-wrapper {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    height: 38%;
+    position: fixed;
+    width: 90%;
+    overflow: hidden;
+    height: 45%;
+    top: 50%;
+  }
+
+  .cloud {
+    display: none;
+  }
+  .clickonme {
+    display: none;
+  }
+
+  .for-mobile-click {
+    display: block;
+    height: 16px;
+    background-color: #ff4141;
+    position: relative;
+    bottom: 5%;
+    padding: 14px 12px;
+    color: white;
+  }
+
+  .bitmoji {
+    width: 75px;
+    top: 100px;
+    right: 22px;
+  }
+
+  .bitmoji-exp {
+    width: 124px;
+    top: 6%;
+  }
+
+  .bitmoji-edu {
+    width: 100px;
+    position: relative;
+    left: 35%;
+    bottom: 48%;
+  }
+
+  .bitmoji-connect {
+    position: relative;
+    width: 162px;
+    right: 26%;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .yt-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .centre {
+    margin-left: 34%;
+  }
+
+  .div1 {
+    height: 10%;
+  }
+
+  .div2 {
+    display: flex;
+    height: 69%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div3 {
+    height: 16%;
+  }
+
+  .intro-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videostyle {
+    padding: 28px 6px;
+    width: 84%;
+    height: 39%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .icon {
+    width: 34px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0px;
+  }
+
+  .nav-mobile {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    right: 8px;
+  }
+
+  .menu-mobile {
+    top: 0px;
+    left: 0;
+    position: absolute;
+    padding: 16px 16px;
+  }
+
+  .data {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    height: 8%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-aboutme {
+    display: block;
+    color: white;
+  }
+
+  .creator-wrapper {
+    height: 92%;
+  }
+
+  .sidenav {
+    z-index: 2;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .year-mob {
+    display: inline !important;
+    margin-left: 8px;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* FOR MINI TABLET */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    min-width: 100%;
+    height: 100vh;
+  }
+
+  .sidenav {
+    z-index: 2;
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .photo {
+    width: 68%;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .data-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    left: 0;
+    height: 92%;
+    padding-top: 72px;
+    padding-left: 10px;
+  }
+
+  .experience2 {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education2 {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .style-input {
+    font-size: 32px;
+  }
+
+  .timeline::after {
+    top: 0px;
+    bottom: 0px;
+    left: 6.5%;
   }
 
   .container {
@@ -749,7 +1006,6 @@ a.btn.project:hover {
     position: relative;
     right: 0%;
     top: 2%;
-    height: 38%;
   }
 
   .skill-img {
@@ -760,22 +1016,19 @@ a.btn.project:hover {
   .certificate-wrapper {
     position: relative;
     right: 0%;
-    top: 22%;
-    /* margin: 8px; */
     width: 90%;
     overflow: hidden;
     height: 38%;
   }
 
-
-  .arrow {
+  .cloud {
     display: none;
   }
-  .clickonme{
+  .clickonme {
     display: none;
   }
 
-  .for-mobile-click{
+  .for-mobile-click {
     display: block;
     height: 16px;
     background-color: #ff4141;
@@ -783,12 +1036,12 @@ a.btn.project:hover {
     bottom: 5%;
     padding: 14px 12px;
     color: white;
-}
+  }
 
   .bitmoji {
     width: 75px;
     top: 100px;
-    right: 22px;
+    right: 50px;
   }
 
   .bitmoji-exp {
@@ -826,99 +1079,365 @@ a.btn.project:hover {
     width: 80%;
   }
 
- 
   .yt-box {
     width: 100%;
     height: 100%;
   }
- 
+
   .centre {
     margin-left: 34%;
   }
 
   .div1 {
     height: 10%;
-}
+  }
 
   .div2 {
     display: flex;
     height: 69%;
     flex-direction: column;
     align-items: center;
-}
-
-.div3 {
-  height: 16%;
-}
-
-.intro-line{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.videostyle {
-  padding: 28px 6px;
-    width: 84%;
-    height: 39%;
-}
-
-.nav{
-  display:none;
-}
-
-.icon {
-  width: 34px;
-  height: 5px;
-  background-color: white;
-  margin: 5px 0px;
-}
-
-.nav-mobile{
-  height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu{
-  right: 8px;
-}
-
-.menu-mobile{
-  top: 0px;
-  left: 0;
-  position: absolute;
-  padding: 16px 16px;
-}
-
-.data {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.header{
-  height: 8%;
-  width: 100%;
-  background-color: cornflowerblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.header-aboutme{
-  display: block;
-  color: white;
   }
 
-.creator-wrapper{
-  height: 92%;
+  .div3 {
+    height: 16%;
+  }
+
+  .intro-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videostyle {
+    padding: 28px 6px;
+    width: 84%;
+    height: 39%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .icon {
+    width: 34px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0px;
+  }
+
+  .nav-mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    right: 8px;
+  }
+
+  .menu-mobile {
+    top: 0px;
+    left: 0;
+    position: absolute;
+    padding: 16px 16px;
+  }
+
+  .data {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    height: 8%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-aboutme {
+    display: block;
+    color: white;
+  }
+
+  .creator-wrapper {
+    height: 92%;
+  }
 }
 
-}
+/* FOR TABLET PORTRAIT MODE */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .about-info{
+    margin:0;
+  }
+
+  .hi{
+    padding-top: 68px;
+    padding-bottom: 20px;
+  }
+
+  .am{
+    padding-bottom: 8px;
+  }
+
+  .im{
+    padding-bottom: 24px;
+  }
+
+  .p-spacing{
+    padding-bottom: 6px;
+  }
+
+  .nav {
+    min-width: 100%;
+    height: 100vh;
+  }
+
+  .sidenav {
+    z-index: 2;
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .photo {
+    width: 40%;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .data-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    left: 0;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience2 {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education2 {
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .style-input {
+    font-size: 32px;
+  }
+
+  .timeline-edu {
+    right: 26%;
+    bottom: 41%;
+  }
+
+  .timeline::after {
+    top: 0px;
+    bottom: 0px;
+    left: 14.5%;
+  }
+
+  .timeline-wrapper {
+    height: 54%;
+  }
+
+  .container {
+    width: 75%;
+    top: 4px;
+  }
+
+  .content {
+    padding: 10px 16px;
+  }
+
+  .skills-wrapper {
+    position: inherit;
+    right: 0%;
+    height: 34%;
+  }
+
+  .skill-img {
+    padding: 8px 27px;
+    font-size: 52px;
+  }
+
+  .certificate-wrapper {
+    position: fixed;
+    top: 68%;
+    left: 25%;
+    height: 303px;
+  }
+
+  .cloud {
+    display: none;
+  }
+  .clickonme {
+    display: none;
+  }
+
+  .for-mobile-click {
+    display: block;
+    height: 18px;
+    background-color: #ff4141;
+    position: relative;
+    bottom: 12%;
+    padding: 17px 14px;
+    color: white;
+  }
+
+  .bitmoji {
+    width: 90px;
+    top: 56%;
+    left: 44%;
+  }
+
+  .bitmoji-exp {
+    width: 179px;
+    bottom: 34%;
+    left: 4%;
+  }
+
+  .bitmoji-edu {
+    width: 158px;
+    left: 74%;
+    bottom: 51%;
+  }
+
+  .bitmoji-connect {
+    bottom: 12%;
+    width: 202px;
+    left: 16%;
+  }
+
+  .logo {
+    padding: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .yt-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .centre {
+    margin-left: 42%;
+  }
+
+  .text-margin {
+    margin: 0;
+  }
+
+  .div1 {
+    height: 10%;
+  }
+
+  .div2 {
+    display: flex;
+    height: 69%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div3 {
+    height: 16%;
+  }
+
+  .intro-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videostyle {
+    padding: 9px 28px;
+    width: 73%;
+    height: 46%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .icon {
+    width: 34px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0px;
+  }
+
+  .nav-mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    right: 8px;
+  }
+
+  .menu-mobile {
+    top: 0px;
+    left: 0;
+    position: absolute;
+    padding: 16px 16px;
+  }
+
+  .data {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    height: 8%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-aboutme {
+    display: block;
+    color: white;
+  }
+
+  .creator-wrapper {
+    height: 92%;
+  }
 }
