@@ -86,14 +86,16 @@
             <h1 class="about-info hi">Hi,</h1>
             <h1 class="about-info am">I am <span style="color:red">Rohan</span>,</h1>
             <p class="iam im">I'm a <span class="auto-input style-input"></span></p>
-            <p class="about-info">A Computer Science graduate who likes to play around with frontends.</p>
-            <p class="about-info">I am highly self-motivated enthusiastic and always willing to learn more.</p>
-            <p class="about-info">I enjoy coding&#128187;, riding my bike🏍️ and travelling to new places.&#x1F30D;</p>
+            <div class="paragraph">
+                <p class="about-info">A Computer Science graduate who likes to play around with frontends.</p>
+                <p class="about-info">I am highly self-motivated enthusiastic and always willing to learn more.</p>
+                <p class="about-info">I enjoy coding&#128187;, riding my bike🏍️ and travelling to new places.&#x1F30D;</p>
+            </div>
         </div>
 
         <img src="./photo/arrow.png" class="cloud" alt="arrow">
         <h2 class="clickonme">Know More!</h2>
-        <h3 class="for-mobile-click" onclick="openPDF()" >Know More</h3>
+        <h3 class="for-mobile-click" onclick="openPDF()">Know More</h3>
         <img src="./photo/Ro.png" class="bitmoji bounce" alt="Image" onclick="openPDF()">
 
     </div>
@@ -102,7 +104,7 @@
 
     <script>
 
-        function openPDF(){
+        function openPDF() {
             window.open("./resources/RohanPawar.pdf", '_blank');
         }
 

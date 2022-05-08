@@ -1200,6 +1200,11 @@ a.btn.project:hover {
     padding-bottom: 24px;
   }
 
+  .paragraph {
+    padding: 0px 48px;
+    text-align: center;
+  }
+
   .p-spacing{
     padding-bottom: 6px;
   }
@@ -1312,14 +1317,14 @@ a.btn.project:hover {
     height: 18px;
     background-color: #ff4141;
     position: relative;
-    bottom: 12%;
+    bottom: 8%;
     padding: 17px 14px;
     color: white;
   }
 
   .bitmoji {
     width: 90px;
-    top: 56%;
+    top: 60%;
     left: 44%;
   }
 
