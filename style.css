@@ -89,6 +89,25 @@
   font-weight: 600;
 }
 
+
+.paragraph{
+  animation: aboutme_anime 1s ease-out forwards;
+}
+
+@keyframes aboutme_anime {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .style-input {
   color: #0070ff;
   font-size: 34px;
@@ -102,7 +121,23 @@
   position: relative;
   left: 9%;
   bottom: 4%;
+  animation: cloud_anime 1s ease-out forwards;
 }
+
+
+@keyframes cloud_anime {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .clickonme {
   z-index: 1;
@@ -111,7 +146,21 @@
   bottom: 6.8%;
   font-size: 20px;
   color: red;
+  animation: know_more_anime 1s ease-out forwards;
 }
+
+@keyframes know_more_anime {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .for-mobile-click {
   display: none;
@@ -258,13 +307,12 @@ body {
   0% {
     opacity: 0;
     transform: translateY(3rem);
-}
+  }
 
-100% {
+  100% {
     opacity: 1;
     transform: translateY(0);
-}
-  
+  }
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -307,8 +355,6 @@ body {
   position: relative;
   border-radius: 8px;
 }
-
-
 
 /* Connect Me Form */
 
@@ -421,16 +467,13 @@ input[type="reset"]:hover {
   0% {
     opacity: 0;
     transform: translateY(3rem);
-}
+  }
 
-100% {
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
 }
-  
-}
-
-
 
 .logo {
   max-width: 100px;
@@ -458,20 +501,17 @@ input[type="reset"]:hover {
   animation: certificate_appear 1s ease-out forwards;
 }
 
-
 @keyframes certificate_appear {
   0% {
     opacity: 0;
     transform: translateY(3rem);
-}
+  }
 
-100% {
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
 }
-  
-}
-
 
 .c-main-title {
   text-align: center;
@@ -517,21 +557,17 @@ input[type="reset"]:hover {
   animation: skill_appear 1s ease-out forwards;
 }
 
-
 @keyframes skill_appear {
   0% {
     opacity: 0;
     transform: translateY(3rem);
-}
+  }
 
-100% {
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
 }
-  
-}
-
-
 
 .skill {
   display: flex;
@@ -552,8 +588,6 @@ input[type="reset"]:hover {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .creator-header {
   width: 100%;
@@ -839,13 +873,25 @@ a.btn.project:hover {
 
   .for-mobile-click {
     display: block;
-    height: 16px;
+    height: 24px;
     background-color: #ff4141;
     position: relative;
     bottom: 5%;
-    padding: 14px 12px;
+    padding: 16px 16px;
     color: white;
+    border-radius: 32px;
+    animation: bg_color_random 10s infinite;
   }
+
+@keyframes bg_color_random {
+  0% {background-color: red;}
+  25%{background-color:rgb(170, 0, 212);}
+  50%{background-color:rgb(0, 209, 17);}
+  75%{background-color:rgb(0, 112, 216);}
+  100% {background-color: red;}
+}
+
+
 
   .bitmoji {
     width: 75px;
@@ -856,6 +902,7 @@ a.btn.project:hover {
   .bitmoji-exp {
     width: 124px;
     top: 6%;
+    z-index: 1;
   }
 
   .bitmoji-edu {
@@ -863,6 +910,7 @@ a.btn.project:hover {
     position: relative;
     left: 37%;
     bottom: 8%;
+    z-index: 1;
   }
 
   .bitmoji-connect {
@@ -1112,6 +1160,15 @@ a.btn.project:hover {
     bottom: 5%;
     padding: 14px 12px;
     color: white;
+    animation: bg_color_random 10s infinite;
+  }
+
+  @keyframes bg_color_random {
+    0% {background-color: red;}
+    25%{background-color:yellow;}
+    50%{background-color:rgb(0, 255, 0);}
+    75%{background-color:rgb(0, 89, 255);}
+    100% {background-color: red;}
   }
 
   .bitmoji {
@@ -1251,20 +1308,20 @@ a.btn.project:hover {
     flex-direction: column;
   }
 
-  .about-info{
-    margin:0;
+  .about-info {
+    margin: 0;
   }
 
-  .hi{
+  .hi {
     padding-top: 68px;
     padding-bottom: 20px;
   }
 
-  .am{
+  .am {
     padding-bottom: 8px;
   }
 
-  .im{
+  .im {
     padding-bottom: 24px;
   }
 
@@ -1273,7 +1330,7 @@ a.btn.project:hover {
     text-align: center;
   }
 
-  .p-spacing{
+  .p-spacing {
     padding-bottom: 6px;
   }
 
