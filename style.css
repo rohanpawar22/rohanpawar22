@@ -797,7 +797,7 @@ a.btn.project:hover {
   .text {
     left: 0;
     height: 92%;
-    padding-top: 72px;
+    padding-top: 49px;
     padding-left: 10px;
   }
 
@@ -876,7 +876,7 @@ a.btn.project:hover {
     height: 24px;
     background-color: #ff4141;
     position: relative;
-    bottom: 5%;
+    bottom: 10%;
     padding: 16px 16px;
     color: white;
     border-radius: 32px;
