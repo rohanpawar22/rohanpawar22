@@ -650,7 +650,21 @@ input[type="reset"]:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  animation: intro_line_anime 1s ease-out forwards;
 }
+
+@keyframes intro_line_anime {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .RR {
   padding-left: 6px;
@@ -703,6 +717,19 @@ input[type="reset"]:hover {
   padding: 24px 16px;
   width: 100%;
   height: 86%;
+  animation: intro_line_anime 3s ease-out forwards;
+}
+
+@keyframes intro_line_anime {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .name {
@@ -861,7 +888,7 @@ a.btn.project:hover {
   .certificate-wrapper {
     width: 90%;
     height: 35%;
-    top: 57%;
+    top: 60%;
   }
 
   .cloud {
