@@ -821,6 +821,10 @@ a.btn.project:hover {
     margin-top: 24px;
   }
 
+.bitmoji-edu{
+  bottom: 6%;
+}
+
 }
 
 /* Media Query for Mobile Devices */
@@ -846,13 +850,13 @@ a.btn.project:hover {
     overflow: auto;
   }
   .bitmoji {
-    width: 56px !important;
+    width: 64px !important;
     top: 100px !important;
     right: 40px !important;
   }
 
   .text {
-    margin-top: 88px;
+    margin-top: 64px;
     left: 0;
     padding: 12px;
   }
@@ -998,7 +1002,7 @@ a.btn.project:hover {
     width: 100px;
     position: relative;
     left: 37%;
-    bottom: 8%;
+    bottom: 6%;
     z-index: 1;
   }
 
@@ -1006,6 +1010,7 @@ a.btn.project:hover {
     position: relative;
     width: 162px;
     right: 26%;
+    bottom: 40px;
   }
 
   .logo {
