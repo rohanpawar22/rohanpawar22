@@ -449,10 +449,10 @@ input[type="reset"]:hover {
 }
 
 .connect-wrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: calc(100vh - 68px);
 }
 
 .social {
@@ -1010,7 +1010,7 @@ a.btn.project:hover {
     position: relative;
     width: 162px;
     right: 26%;
-    bottom: 40px;
+    bottom: 180px;
   }
 
   .logo {
@@ -1310,8 +1310,9 @@ a.btn.project:hover {
 
   .bitmoji-connect {
     position: relative;
-    width: 162px;
-    right: 26%;
+    width: 172px;
+    right: 24%;
+    bottom: 188px;
   }
 
   .logo {
@@ -1612,8 +1613,9 @@ a.btn.project:hover {
 
   .bitmoji-connect {
     position: relative;
-    width: 162px;
-    right: 26%;
+    width: 180px;
+    right: 24%;
+    bottom: 188px;
   }
 
   .logo {
