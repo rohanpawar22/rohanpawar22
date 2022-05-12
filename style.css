@@ -118,9 +118,9 @@
 
 .cloud {
   height: 28%;
-  position: relative;
-  left: 9%;
-  bottom: 4%;
+  position: absolute;
+  right: 7%;
+  bottom: 40%;
   animation: cloud_anime 1s ease-out forwards;
 }
 
@@ -141,10 +141,10 @@
 
 .clickonme {
   z-index: 1;
-  position: relative;
-  right: 3.1%;
-  bottom: 6.8%;
-  font-size: 20px;
+  position: absolute;
+  right: 9%;
+  top: 39%;
+  font-size: 18px;
   color: red;
   animation: know_more_anime 1s ease-out forwards;
 }
@@ -758,46 +758,109 @@ a.btn.project:hover {
   font-weight: 600;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
+/* --------------------------------------------------------------------------- */
+
+/* Media Query for small Mobile Devices */
+@media (max-width: 320px) {
+  body {
+    overflow: hidden;
+  }
+  .data {
+    overflow: hidden;
+    height: unset;
+
+  }
+  .text-container {
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bitmoji {
+    width: 48px !important;
+    top: 100px !important;
+    right: 40px !important;
+  }
+  .text {
+    margin-top: 88px;
+    left: 0;
+    padding: 12px;
+  }
+  .text h1 {
+    margin: 8px 0px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .for-mobile-click {
+    width: 200px;
+    text-align: center;
+  }
+  .sidenav {
+    height: unset;
   }
 
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+  .sidenav .closebtn {
+    top: 8px;
+    right: 24px;
+    font-size: 38px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #00335e transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
 }
 
-/* FOR MOBILE */
-
+/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-  .body {
+
+  body {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
+  .data {
+    overflow: hidden;
+    height: unset;
+    width: 100%;
+
+  }
+  .text-container {
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bitmoji {
+    width: 56px !important;
+    top: 100px !important;
+    right: 40px !important;
+  }
+
+  .text {
+    margin-top: 88px;
+    left: 0;
+    padding: 12px;
+  }
+  .text h1 {
+    margin: 8px 0px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .for-mobile-click {
+    width: 200px;
+    text-align: center;
+  }
+  .sidenav {
+    height: unset;
+  }
+
+  .sidenav .closebtn {
+    top: 8px;
+    right: 24px;
+    font-size: 38px;
+  }
+
 
   .nav {
     min-width: 100%;
@@ -810,22 +873,6 @@ a.btn.project:hover {
 
   .photo {
     width: 68%;
-  }
-
-  .data {
-    width: 100%;
-  }
-
-  .data-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text {
-    left: 0;
-    height: 92%;
-    padding-top: 49px;
-    padding-left: 10px;
   }
 
   .experience2 {
@@ -910,20 +957,12 @@ a.btn.project:hover {
     animation: bg_color_random 10s infinite;
   }
 
-@keyframes bg_color_random {
-  0% {background-color: red;}
-  25%{background-color:rgb(170, 0, 212);}
-  50%{background-color:rgb(0, 209, 17);}
-  75%{background-color:rgb(0, 112, 216);}
-  100% {background-color: red;}
-}
-
-
-
-  .bitmoji {
-    width: 75px;
-    top: 100px;
-    right: 22px;
+  @keyframes bg_color_random {
+    0% {background-color: red;}
+    25%{background-color:rgb(170, 0, 212);}
+    50%{background-color:rgb(0, 209, 17);}
+    75%{background-color:rgb(0, 112, 216);}
+    100% {background-color: red;}
   }
 
   .bitmoji-exp {
@@ -968,10 +1007,6 @@ a.btn.project:hover {
     height: 100%;
   }
 
-  /* .centre {
-    margin-left: 34%;
-  } */
-
   .text-margin {
     margin: 0;
   }
@@ -1037,9 +1072,9 @@ a.btn.project:hover {
   }
 
   .header {
-    height: 8%;
+    height: 68px;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #1c7cda;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1068,22 +1103,56 @@ a.btn.project:hover {
   }
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px)  {
 
-/* FOR MINI TABLET */
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .body {
+  body {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+  }
+  .data {
+    overflow: hidden;
+    height: unset;
+    width: 100%;
+
+  }
+  .text-container {
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bitmoji {
+    width: 56px !important;
+    top: 100px !important;
+    right: 40px !important;
+  }
+
+  .text {
+    margin-top: 88px;
+    left: 0;
+    padding: 12px;
+  }
+  .text h1 {
+    margin: 8px 0px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .for-mobile-click {
+    width: 200px;
+    text-align: center;
+  }
+  .sidenav {
+    height: unset;
+  }
+
+  .sidenav .closebtn {
+    top: 8px;
+    right: 24px;
+    font-size: 38px;
   }
 
   .nav {
@@ -1091,32 +1160,12 @@ a.btn.project:hover {
     height: 100vh;
   }
 
-  .sidenav {
-    z-index: 2;
-  }
-
   .avatar {
     text-align: center;
   }
 
   .photo {
-    width: 68%;
-  }
-
-  .data {
-    width: 100%;
-  }
-
-  .data-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text {
-    left: 0;
-    height: 92%;
-    padding-top: 72px;
-    padding-left: 10px;
+    width: 32%;
   }
 
   .experience2 {
@@ -1132,16 +1181,22 @@ a.btn.project:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .style-input {
     font-size: 32px;
   }
 
+  .timeline-edu {
+    top: 6%;
+    right: 13%;
+  }
+
   .timeline::after {
     top: 0px;
     bottom: 0px;
-    left: 6.5%;
+    left: 9%;
   }
 
   .container {
@@ -1153,10 +1208,16 @@ a.btn.project:hover {
     padding: 10px 16px;
   }
 
+  .font-white {
+    font-size: 14px;
+  }
+
   .skills-wrapper {
     position: relative;
     right: 0%;
     top: 2%;
+    height: 38%;
+    margin-top: 48px;
   }
 
   .skill-img {
@@ -1165,11 +1226,9 @@ a.btn.project:hover {
   }
 
   .certificate-wrapper {
-    position: relative;
-    right: 0%;
     width: 90%;
-    overflow: hidden;
-    height: 38%;
+    height: 35%;
+    top: 60%;
   }
 
   .cloud {
@@ -1181,39 +1240,36 @@ a.btn.project:hover {
 
   .for-mobile-click {
     display: block;
-    height: 16px;
+    height: 24px;
     background-color: #ff4141;
     position: relative;
-    bottom: 5%;
-    padding: 14px 12px;
+    bottom: 8%;
+    padding: 16px 16px;
     color: white;
+    border-radius: 32px;
     animation: bg_color_random 10s infinite;
   }
 
   @keyframes bg_color_random {
     0% {background-color: red;}
-    25%{background-color:yellow;}
-    50%{background-color:rgb(0, 255, 0);}
-    75%{background-color:rgb(0, 89, 255);}
+    25%{background-color:rgb(170, 0, 212);}
+    50%{background-color:rgb(0, 209, 17);}
+    75%{background-color:rgb(0, 112, 216);}
     100% {background-color: red;}
-  }
-
-  .bitmoji {
-    width: 75px;
-    top: 100px;
-    right: 50px;
   }
 
   .bitmoji-exp {
     width: 124px;
-    top: 3%;
+    top: 6%;
+    z-index: 1;
   }
 
   .bitmoji-edu {
     width: 100px;
     position: relative;
-    left: 35%;
-    bottom: 48%;
+    left: 37%;
+    bottom: 8%;
+    z-index: 1;
   }
 
   .bitmoji-connect {
@@ -1244,9 +1300,9 @@ a.btn.project:hover {
     height: 100%;
   }
 
-  /* .centre {
-    margin-left: 34%;
-  } */
+  .text-margin {
+    margin: 0;
+  }
 
   .div1 {
     height: 10%;
@@ -1287,7 +1343,7 @@ a.btn.project:hover {
   }
 
   .nav-mobile {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -1309,9 +1365,9 @@ a.btn.project:hover {
   }
 
   .header {
-    height: 8%;
+    height: 68px;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #1c7cda;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1325,40 +1381,71 @@ a.btn.project:hover {
   .creator-wrapper {
     height: 92%;
   }
+
+  .sidenav {
+    z-index: 2;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .year-mob {
+    display: inline !important;
+    margin-left: 8px;
+  }
 }
+        
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px)  {
 
-/* FOR TABLET PORTRAIT MODE */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .body {
+  body {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
+  .data {
+    overflow: hidden;
+    height: unset;
+    width: 100%;
 
-  .about-info {
-    margin: 0;
+  }
+  .text-container {
+    height: calc(100vh - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bitmoji {
+    width: 88px !important;
+    top: 100px !important;
+    right: 40px !important;
   }
 
-  .hi {
-    padding-top: 68px;
-    padding-bottom: 20px;
+  .text {
+    margin-top: 88px;
+    left: 0;
+    padding: 12px;
   }
-
-  .am {
-    padding-bottom: 8px;
+  .text h1 {
+    margin: 8px 0px;
   }
-
-  .im {
-    padding-bottom: 24px;
-  }
-
   .paragraph {
-    padding: 0px 48px;
+    font-size: 18px;
+  }
+  .for-mobile-click {
+    width: 200px;
     text-align: center;
   }
+  .sidenav {
+    height: unset;
+  }
 
-  .p-spacing {
-    padding-bottom: 6px;
+  .sidenav .closebtn {
+    top: 8px;
+    right: 24px;
+    font-size: 38px;
   }
 
   .nav {
@@ -1366,33 +1453,13 @@ a.btn.project:hover {
     height: 100vh;
   }
 
-  .sidenav {
-    z-index: 2;
-  }
-
   .avatar {
     text-align: center;
   }
 
   .photo {
-    width: 40%;
-  }
-
-  .data {
-    width: 100%;
-  }
-
-  .data-mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text {
-    left: 0;
-    height: 92%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 32%;
+    max-width: 224px;
   }
 
   .experience2 {
@@ -1407,8 +1474,8 @@ a.btn.project:hover {
     height: 92%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
   }
 
   .style-input {
@@ -1416,18 +1483,14 @@ a.btn.project:hover {
   }
 
   .timeline-edu {
-    right: 26%;
-    bottom: 41%;
+    top: 6%;
+    right: 13%;
   }
 
   .timeline::after {
     top: 0px;
     bottom: 0px;
-    left: 14.5%;
-  }
-
-  .timeline-wrapper {
-    height: 54%;
+    left: 9%;
   }
 
   .container {
@@ -1439,10 +1502,16 @@ a.btn.project:hover {
     padding: 10px 16px;
   }
 
+  .font-white {
+    font-size: 14px;
+  }
+
   .skills-wrapper {
-    position: inherit;
+    position: relative;
     right: 0%;
-    height: 34%;
+    top: 2%;
+    height: 38%;
+    margin-top: 48px;
   }
 
   .skill-img {
@@ -1451,10 +1520,9 @@ a.btn.project:hover {
   }
 
   .certificate-wrapper {
-    position: fixed;
-    top: 68%;
-    left: 25%;
-    height: 303px;
+    width: 90%;
+    height: 35%;
+    top: 60%;
   }
 
   .cloud {
@@ -1466,36 +1534,42 @@ a.btn.project:hover {
 
   .for-mobile-click {
     display: block;
-    height: 18px;
+    height: 24px;
     background-color: #ff4141;
     position: relative;
     bottom: 8%;
-    padding: 17px 14px;
+    padding: 16px 16px;
     color: white;
+    border-radius: 32px;
+    animation: bg_color_random 10s infinite;
   }
 
-  .bitmoji {
-    width: 90px;
-    top: 60%;
-    left: 44%;
+  @keyframes bg_color_random {
+    0% {background-color: red;}
+    25%{background-color:rgb(170, 0, 212);}
+    50%{background-color:rgb(0, 209, 17);}
+    75%{background-color:rgb(0, 112, 216);}
+    100% {background-color: red;}
   }
 
   .bitmoji-exp {
-    width: 179px;
-    bottom: 34%;
-    left: 4%;
+    width: 124px;
+    top: 6%;
+    z-index: 1;
   }
 
   .bitmoji-edu {
-    width: 158px;
-    left: 74%;
-    bottom: 51%;
+    width: 100px;
+    position: relative;
+    left: 37%;
+    bottom: 8%;
+    z-index: 1;
   }
 
   .bitmoji-connect {
-    bottom: 12%;
-    width: 202px;
-    left: 16%;
+    position: relative;
+    width: 162px;
+    right: 26%;
   }
 
   .logo {
@@ -1519,10 +1593,6 @@ a.btn.project:hover {
     width: 100%;
     height: 100%;
   }
-
-  /* .centre {
-    margin-left: 42%;
-  } */
 
   .text-margin {
     margin: 0;
@@ -1550,9 +1620,9 @@ a.btn.project:hover {
   }
 
   .videostyle {
-    padding: 9px 28px;
-    width: 73%;
-    height: 46%;
+    padding: 28px 6px;
+    width: 84%;
+    height: 39%;
   }
 
   .nav {
@@ -1567,7 +1637,7 @@ a.btn.project:hover {
   }
 
   .nav-mobile {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -1589,9 +1659,9 @@ a.btn.project:hover {
   }
 
   .header {
-    height: 8%;
+    height: 68px;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #1c7cda;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1605,4 +1675,27 @@ a.btn.project:hover {
   .creator-wrapper {
     height: 92%;
   }
+
+  .sidenav {
+    z-index: 2;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .year-mob {
+    display: inline !important;
+    margin-left: 8px;
+  }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
 }
