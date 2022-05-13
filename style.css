@@ -762,9 +762,9 @@ a.btn.project:hover {
 
 /* Media Query for small Mobile Devices */
 @media (max-width: 320px) {
-  body {
+  /* body {
     overflow: hidden;
-  }
+  } */
   .data {
     overflow: hidden;
     height: unset;
@@ -831,7 +831,7 @@ a.btn.project:hover {
 @media (max-width: 480px) {
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
   }
@@ -1135,7 +1135,7 @@ a.btn.project:hover {
 @media (min-width: 481px) and (max-width: 767px)  {
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
   }
@@ -1437,7 +1437,7 @@ a.btn.project:hover {
 @media (min-width: 768px) and (max-width: 1024px)  {
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
   }
