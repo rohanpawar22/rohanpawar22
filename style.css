@@ -412,7 +412,7 @@ input[type="reset"]:hover {
 
 .btn {
   color: white;
-  padding: 11px 22px;
+  padding: 14px 24px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -864,6 +864,13 @@ a.btn.project:hover {
     padding: 32px;    
   }
 
+}
+
+
+@media (min-width: 370px) and (max-width: 440px) {
+  .img-logo{
+    max-width: 56px;
+  }
 }
 
 /* -------------------------------------------------------------------------------- */
