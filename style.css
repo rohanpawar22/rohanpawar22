@@ -209,6 +209,7 @@
   bottom: 0px;
   right: 5px;
   width: 163px;
+  z-index: 1;
 }
 
 .bitmoji-connect {
@@ -1242,7 +1243,7 @@ a.btn.project:hover {
     align-items: center;
   }
   .bitmoji {
-    width: 56px !important;
+    width: 70px !important;
     top: 100px !important;
     right: 40px !important;
   }
@@ -1875,4 +1876,29 @@ a.btn.project:hover {
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
 
+}
+
+/* -------------------------------------------------------------------------------- */
+/* FOR SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0); 
+  border-radius: 50px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:lightgrey; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgrey; 
 }
