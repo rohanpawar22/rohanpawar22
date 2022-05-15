@@ -880,6 +880,7 @@ a.btn.project:hover {
   .img-logo{
     max-width: 56px;
   }
+
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -1004,9 +1005,9 @@ a.btn.project:hover {
   .skills-wrapper {
     position: relative;
     right: 0%;
-    top: 2%;
-    height: 300px;
-    margin: 48px 0px;
+    top: 0%;
+    height: 292px;
+    margin: 54px 0px;
   }
 
   .skill-img {
@@ -1116,9 +1117,6 @@ a.btn.project:hover {
     margin: 0;
   }
 
-  .div1 {
-    /* height: 10%; */
-  }
 
   .div2 {
     display: flex;
@@ -1127,9 +1125,6 @@ a.btn.project:hover {
     align-items: center;
   }
 
-  .div3 {
-    /* height: 16%; */
-  }
 
   .intro-line {
     display: flex;
@@ -1665,7 +1660,7 @@ a.btn.project:hover {
     position: relative;
     right: 0%;
     top: 2%;
-    height: 38%;
+    height: 36%;
     margin-top: 48px;
   }
 
