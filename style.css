@@ -41,7 +41,7 @@
 }
 
 .side-bar-label-creator {
-  color: #7e7d7d ;
+  color: #7e7d7d;
 }
 
 .active {
@@ -97,8 +97,7 @@
   font-weight: 600;
 }
 
-
-.paragraph{
+.paragraph {
   animation: aboutme_anime 1s ease-out forwards;
 }
 
@@ -113,8 +112,6 @@
     transform: translateY(0);
   }
 }
-
-
 
 .style-input {
   color: #0070ff;
@@ -132,7 +129,6 @@
   animation: cloud_anime 1s ease-out forwards;
 }
 
-
 @keyframes cloud_anime {
   0% {
     opacity: 0;
@@ -145,7 +141,9 @@
   }
 }
 
-
+.cloud:hover {
+  cursor: pointer;
+}
 
 .clickonme {
   z-index: 1;
@@ -168,7 +166,6 @@
     transform: translateY(0);
   }
 }
-
 
 .for-mobile-click {
   display: none;
@@ -195,6 +192,10 @@
   animation: bounce 0.8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+.bitmoji:hover {
+  cursor: pointer;
 }
 
 .bitmoji-exp {
@@ -672,7 +673,6 @@ input[type="reset"]:hover {
   }
 }
 
-
 .RR {
   padding-left: 6px;
   padding-left: 6px;
@@ -680,12 +680,12 @@ input[type="reset"]:hover {
 }
 
 .pre-text {
-  color: lightgoldenrodyellow
+  color: lightgoldenrodyellow;
 }
 
 .title-text {
-  color: #338dff ;
-  text-decoration-color: #338dff ;
+  color: #338dff;
+  text-decoration-color: #338dff;
 }
 
 .yt-box {
@@ -707,8 +707,6 @@ input[type="reset"]:hover {
   height: 100%;
   width: 100%;
 }
-
-
 
 .video-title {
   text-align: center;
@@ -786,7 +784,6 @@ a.btn.project:hover {
   .data {
     overflow: hidden;
     height: unset;
-
   }
   .text-container {
     height: calc(100vh - 68px);
@@ -839,7 +836,7 @@ a.btn.project:hover {
     margin-top: 24px;
   }
 
-  .bitmoji-edu{
+  .bitmoji-edu {
     left: 0;
     bottom: 0;
     margin-top: 24px;
@@ -869,24 +866,21 @@ a.btn.project:hover {
   .social {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 32px;    
+    padding: 32px;
   }
-
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Media Query for pixel 4a Mobile Devices */
 @media (min-width: 370px) and (max-width: 440px) {
-  .img-logo{
+  .img-logo {
     max-width: 56px;
   }
-
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-
   body {
     /* overflow: hidden; */
     display: flex;
@@ -896,7 +890,6 @@ a.btn.project:hover {
     overflow: hidden;
     height: unset;
     width: 100%;
-
   }
   .text-container {
     height: calc(100vh - 68px);
@@ -1047,11 +1040,21 @@ a.btn.project:hover {
   }
 
   @keyframes bg_color_random {
-    0% {background-color: red;}
-    25%{background-color:rgb(170, 0, 212);}
-    50%{background-color:rgb(0, 209, 17);}
-    75%{background-color:rgb(0, 112, 216);}
-    100% {background-color: red;}
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: rgb(170, 0, 212);
+    }
+    50% {
+      background-color: rgb(0, 209, 17);
+    }
+    75% {
+      background-color: rgb(0, 112, 216);
+    }
+    100% {
+      background-color: red;
+    }
   }
 
   .bitmoji-exp {
@@ -1063,14 +1066,13 @@ a.btn.project:hover {
     margin-top: 134px;
   }
 
-  .bitmoji-edu{
+  .bitmoji-edu {
     width: 100px;
     left: 24px;
     bottom: 0;
     margin-top: 24px;
     position: relative;
   }
-
 
   .connect-wrapper {
     align-items: center;
@@ -1087,7 +1089,7 @@ a.btn.project:hover {
   .social {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 32px;    
+    padding: 32px;
   }
 
   .logo {
@@ -1117,14 +1119,12 @@ a.btn.project:hover {
     margin: 0;
   }
 
-
   .div2 {
     display: flex;
     /* height: 69%; */
     flex-direction: column;
     align-items: center;
   }
-
 
   .intro-line {
     display: flex;
@@ -1217,8 +1217,7 @@ a.btn.project:hover {
 
 /* -------------------------------------------------------------------------------- */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px)  {
-
+@media (min-width: 481px) and (max-width: 767px) {
   body {
     /* overflow: hidden; */
     display: flex;
@@ -1228,7 +1227,6 @@ a.btn.project:hover {
     overflow: hidden;
     height: unset;
     width: 100%;
-
   }
   .text-container {
     height: calc(100vh - 68px);
@@ -1375,11 +1373,21 @@ a.btn.project:hover {
   }
 
   @keyframes bg_color_random {
-    0% {background-color: red;}
-    25%{background-color:rgb(170, 0, 212);}
-    50%{background-color:rgb(0, 209, 17);}
-    75%{background-color:rgb(0, 112, 216);}
-    100% {background-color: red;}
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: rgb(170, 0, 212);
+    }
+    50% {
+      background-color: rgb(0, 209, 17);
+    }
+    75% {
+      background-color: rgb(0, 112, 216);
+    }
+    100% {
+      background-color: red;
+    }
   }
 
   .bitmoji-exp {
@@ -1537,11 +1545,10 @@ a.btn.project:hover {
     margin-left: 8px;
   }
 }
-        
+
 /* -------------------------------------------------------------------------------- */
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px)  {
-
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     /* overflow: hidden; */
     display: flex;
@@ -1551,7 +1558,6 @@ a.btn.project:hover {
     overflow: hidden;
     height: unset;
     width: 100%;
-
   }
   .text-container {
     height: calc(100vh - 68px);
@@ -1700,11 +1706,21 @@ a.btn.project:hover {
   }
 
   @keyframes bg_color_random {
-    0% {background-color: red;}
-    25%{background-color:rgb(170, 0, 212);}
-    50%{background-color:rgb(0, 209, 17);}
-    75%{background-color:rgb(0, 112, 216);}
-    100% {background-color: red;}
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: rgb(170, 0, 212);
+    }
+    50% {
+      background-color: rgb(0, 209, 17);
+    }
+    75% {
+      background-color: rgb(0, 112, 216);
+    }
+    100% {
+      background-color: red;
+    }
   }
 
   .bitmoji-exp {
@@ -1730,7 +1746,6 @@ a.btn.project:hover {
     right: 0;
     bottom: 0;
   }
-
 
   .logo {
     padding: 10px;
@@ -1861,16 +1876,15 @@ a.btn.project:hover {
     margin-left: 8px;
   }
 }
-  
+
 /* -------------------------------------------------------------------------------- */
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
+@media (min-width: 1025px) and (max-width: 1280px) {
 }
-  
+
 /* -------------------------------------------------------------------------------- */
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -1883,17 +1897,17 @@ a.btn.project:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0); 
+  box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
   border-radius: 50px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:lightgrey; 
+  background: lightgrey;
   border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: lightgrey; 
+  background: lightgrey;
 }
