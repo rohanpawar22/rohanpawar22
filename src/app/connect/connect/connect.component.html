@@ -1,0 +1,60 @@
+<div class="data data-mobile">
+  <div class="connect-wrapper">
+
+    <div class="social">
+
+        <div class="logo">
+            <a href="https://github.com/rohanpawar22" target="_blank">
+                <img class="img-logo" src="assets/logo/git.png" alt="Git">
+            </a>
+        </div>
+
+        <div class="logo">
+            <a href="https://www.linkedin.com/in/rohan-pawar-55a0a5147/" target="_blank">
+                <img class="img-logo" src="assets/logo/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+
+        <div class="logo">
+            <a href="https://www.instagram.com/roadmanrohan/" target="_blank">
+                <img class="img-logo" src="assets/logo/insta.png" alt="IG">
+            </a>
+        </div>
+
+        <div class="logo">
+            <a href="https://www.youtube.com/channel/UCd2DorrmxXtnqwggVPZRCGw" target="_blank">
+                <img class="img-logo" src="assets/logo/yt.png" alt="YT">
+            </a>
+        </div>
+
+    </div>
+
+    <img src="assets/photo/Connect.png" class="bitmoji-connect bounce" alt="Image">
+
+    <div class="form-container">
+      <div class="form-title">
+        <h3>Connect with me</h3>
+      </div>
+
+      <form #myForm="ngForm" (ngSubmit)="submitForm()" id="my-form">
+        <div class="form-field">
+          <input type="text" name="Name" [(ngModel)]="formData.Name" placeholder="Your name.." required>
+        </div>
+
+        <div class="form-field">
+          <input type="email" name="Email" [(ngModel)]="formData.Email" placeholder="Your email.." required>
+        </div>
+
+        <div class="form-field">
+          <textarea name="Message" [(ngModel)]="formData.Message" placeholder="Write your message.." style="height:120px" required></textarea>
+        </div>
+
+        <div class="button-container">
+          <input type="reset" class="btn reset-btn" (click)="myForm.resetForm()" value="Reset">
+          <input type="submit" class="btn submit-btn" value="Submit">
+        </div>
+      </form>
+    </div>
+
+</div>
+</div>

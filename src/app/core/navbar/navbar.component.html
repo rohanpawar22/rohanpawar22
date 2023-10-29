@@ -1,0 +1,61 @@
+<div class="nav" [ngStyle]="{'background-color': isCreatorRouteActive ? '#383838' : '#178dff'}">
+  <div class="avatar border">
+      <img class="photo" [src]="isCreatorRouteActive ? 'assets/photo/ytdp.jpg' : 'assets/photo/RPDP2.jpg'" alt="Rohan">
+  </div>
+
+  <div class="menu">
+      <div class="pad-decoration">
+          <a [ngClass]="isCreatorRouteActive ? 'side-bar-label side-bar-label-creator' : 'side-bar-label'" routerLinkActive="active" [routerLink]="['/about-me']">About Me</a>
+      </div>
+      <div class="pad-decoration">
+          <a [ngClass]="isCreatorRouteActive ? 'side-bar-label side-bar-label-creator' : 'side-bar-label'"  routerLinkActive="active" [routerLink]="['/experience']">Experience</a>
+      </div>
+      <div class="pad-decoration">
+          <a [ngClass]="isCreatorRouteActive ? 'side-bar-label side-bar-label-creator' : 'side-bar-label'"  routerLinkActive="active" [routerLink]="['/education']">Education</a>
+      </div>
+      <div class="pad-decoration">
+          <a [ngClass]="isCreatorRouteActive ? 'side-bar-label side-bar-label-creator' : 'side-bar-label'"  routerLinkActive="active" [routerLink]="['/connect']">Connect</a>
+      </div>
+      <div class="pad-decoration">
+          <a [ngClass]="isCreatorRouteActive ? 'side-bar-label side-bar-label-creator' : 'side-bar-label'"  routerLinkActive="active" [routerLink]="['/creator']" (click)="checkRoute()">Creator</a>
+      </div>
+  </div>
+</div>
+
+<!-- <div class="data"> -->
+<div class="header">
+  <h2 class="header-aboutme">{{titleName}}</h2>
+
+  <div [ngStyle]="{'width': sideNavWidth}" class="sidenav" >
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <div class="nav-mobile">
+      <div class="avatar border">
+        <img class="photo" [src]="isCreatorRouteActive ? 'assets/photo/ytdp.jpg' : 'assets/photo/RPDP2.jpg'" alt="Rohan">
+      </div>
+      <div class="menu">
+        <div class="pad-decoration">
+            <a class='side-bar-label' routerLinkActive="active" [routerLink]="['/about-me']" (click)="closeNav()">About Me</a>
+        </div>
+        <div class="pad-decoration">
+            <a class='side-bar-label'  routerLinkActive="active" [routerLink]="['/experience']" (click)="closeNav()">Experience</a>
+        </div>
+        <div class="pad-decoration">
+            <a class='side-bar-label'  routerLinkActive="active" [routerLink]="['/education']" (click)="closeNav()">Education</a>
+        </div>
+        <div class="pad-decoration">
+            <a class='side-bar-label'  routerLinkActive="active" [routerLink]="['/connect']" (click)="closeNav()">Connect</a>
+        </div>
+        <div class="pad-decoration">
+            <a class='side-bar-label'  routerLinkActive="active" [routerLink]="['/creator']" (click)="checkRoute()" (click)="closeNav()">Creator</a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <span (click)="openNav()" class="menu-mobile">
+    <div class="icon"></div>
+    <div class="icon"></div>
+    <div class="icon"></div>
+  </span>
+</div>
+<!-- </div> -->
