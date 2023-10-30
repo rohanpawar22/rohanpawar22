@@ -36,25 +36,25 @@
         <h3>Connect with me</h3>
       </div>
 
-      <form #myForm="ngForm" (ngSubmit)="submitForm()" id="my-form">
+      <form [formGroup]="connectForm" (keydown.enter)="$event.preventDefault()" (ngSubmit)="submitForm()">
         <div class="form-field">
-          <input type="text" name="Name" [(ngModel)]="formData.Name" placeholder="Your name.." required>
+          <input type="text" formControlName="name" placeholder="Your name..">
         </div>
 
         <div class="form-field">
-          <input type="email" name="Email" [(ngModel)]="formData.Email" placeholder="Your email.." required>
+          <input type="email" formControlName="email" placeholder="Your email..">
         </div>
 
         <div class="form-field">
-          <textarea name="Message" [(ngModel)]="formData.Message" placeholder="Write your message.." style="height:120px" required></textarea>
+          <textarea type="text" formControlName="message" placeholder="Write your message.." style="height:120px"></textarea>
         </div>
 
         <div class="button-container">
-          <input type="reset" class="btn reset-btn" (click)="myForm.resetForm()" value="Reset">
-          <input type="submit" class="btn submit-btn" value="Submit">
+          <button type="reset" class="btn reset-btn" (click)="resetForm()">Reset</button>
+          <button type="submit" class="btn submit-btn" [disabled]="connectForm.invalid">Submit</button>
         </div>
       </form>
     </div>
-
 </div>
 </div>
+<modal></modal>

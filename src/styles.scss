@@ -397,15 +397,6 @@ textarea {
   resize: vertical;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: black;
-}
-
-input[type="reset"]:hover {
-  background-color: black;
-}
-
 /* Add a background color and some padding around the form */
 .form-container {
   margin-left: 12%;
@@ -435,6 +426,21 @@ input[type="reset"]:hover {
 
 .submit-btn {
   background-color: rgb(0 62 133);
+}
+
+button:disabled {
+  opacity: 0.2;
+}
+button:hover:disabled {
+  cursor: not-allowed;
+}
+
+.submit-btn:hover {
+  background-color: black;
+}
+
+.reset-btn:hover {
+  background-color: black;
 }
 
 .logos {
@@ -782,7 +788,7 @@ a.btn.project:hover {
   /* body {
     overflow: hidden;
   } */
-  .body{
+  .body {
     display: block !important;
   }
   .data {
@@ -877,7 +883,7 @@ a.btn.project:hover {
 /* -------------------------------------------------------------------------------- */
 /* Media Query for pixel 4a Mobile Devices */
 @media (min-width: 370px) and (max-width: 440px) {
-  .body{
+  .body {
     display: block !important;
   }
   .img-logo {
@@ -893,7 +899,7 @@ a.btn.project:hover {
     display: flex;
     flex-direction: column;
   }
-  .body{
+  .body {
     display: block !important;
   }
   .data {
@@ -1233,7 +1239,7 @@ a.btn.project:hover {
     display: flex;
     flex-direction: column;
   }
-  .body{
+  .body {
     display: block !important;
   }
   .data {
@@ -1567,7 +1573,7 @@ a.btn.project:hover {
     display: flex;
     flex-direction: column;
   }
-  .body{
+  .body {
     display: block !important;
   }
   .data {

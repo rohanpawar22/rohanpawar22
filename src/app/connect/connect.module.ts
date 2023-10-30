@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ConnectRoutingModule } from './connect-routing.module';
 import { ConnectComponent } from './connect/connect.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ConnectRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class ConnectModule { }
